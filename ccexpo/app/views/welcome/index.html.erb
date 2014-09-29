@@ -1,0 +1,17 @@
+<%= link_to "Add New Event", new_event_path %>
+<br>
+<% @events.each do |event| %>
+  <%=event.event_name %>
+  <br>
+  <%=event.event_time %>
+  <br> 
+  <%=event.event_location %>
+  <br>
+  <%=event.event_description %>
+  <br>
+  <%= link_to event.event_name, event_path(event) %>
+  <%= link_to "Edit Event", edit_event_path(event) %>
+  <%= link_to "Delete Event", event_path(event), method: :delete %>
+  <br>
+<% end %>
+

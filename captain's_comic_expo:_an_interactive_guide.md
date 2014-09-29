@@ -28,19 +28,22 @@ When users visit home page, they will be prompted to create and register. They w
 <br>- User Crud |1 hour|
 <br>Time Estimate = 12 hours 
 
-###News Page
-Upon registering users will be taken to the news section.
-The news section will have up to date news pertaining to the event. There will be a new's carousel featuring three stories and a live feed from instagram set on a filter using hashtags suggested by the event.
+###Event Page
+Upon registering users will be taken to the event section.
+The event section will be a eight box grid system built thru bootstrap. Each box will lead to an overview of the specific event.
 
 <br>
--CRUD for news |2 hours|
+-CRUD for events |2 hours|
 <br>- Styling |12 hours|
-<br>- Instagram Gem |3 hours|
-<br>- AJAX |5 hours|
 <br>Time Estimate = 22 hours
 
-####Total Time = 108 hours 
 
 
+####Total Time = 108 hours
+
+##Wireframes
+![image](/Users/johnhammond/Pictures/iPhoto Library.photolibrary/Previews/2014/09/29/20140929-072743/Zti5PEhkTU2zV%z63F097w/IMG_0773.jpg)
+![image](/Users/johnhammond/Pictures/iPhoto Library.photolibrary/Previews/2014/09/29/20140929-072743/p1+gx99zRDOapPcM%hC37g/IMG_0774.jpg)
+![image](/Users/johnhammond/Pictures/iPhoto Library.photolibrary/Masters/2014/09/29/20140929-072743/IMG_0775.JPG )
 
 

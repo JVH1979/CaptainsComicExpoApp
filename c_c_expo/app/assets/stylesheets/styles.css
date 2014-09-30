@@ -1,0 +1,17 @@
+@charset "UTF - 8";
+
+body { 
+  background-image: url('cover.jpg');
+  background-repeat: repeat;
+  background-position: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.modal-footer {   border-top: 0px; }
+
+.loginModal {
+  background-color: #A80000;
+}

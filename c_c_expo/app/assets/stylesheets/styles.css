@@ -12,6 +12,10 @@ body {
 
 .modal-footer {   border-top: 0px; }
 
-.loginModal {
-  background-color: #A80000;
+.modal-body {
+  color: #A80000;
+}
+
+.h1 {
+  font-color:red;
 }

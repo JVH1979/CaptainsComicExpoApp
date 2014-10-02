@@ -1,0 +1,11 @@
+<h1>Edit that</h1>
+
+<%= form_for @news do |f| %>
+  <%= f.label :headline %>
+  <%= f.text_field :headline %>
+  <br>
+  <%= f.label :story %>
+  <%= f.text_area :story %>
+  <br>
+  <%= f.submit %>
+<% end %>

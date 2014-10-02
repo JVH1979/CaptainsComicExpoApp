@@ -66,7 +66,25 @@
                 <li>
                     <a href="#">Contact</a>
                 <li>
-                    <a href= "#" class="btn btn-danger"%>Create an Event</a>
+                    <%= link_to "Create an Event", new_event_path %>
+                    <br>
+                    <% @events.each do |event| %>
+                     <%= link_to event.name, event_path(event) %>
+                     <%= link_to "Edit", edit_event_path(event) %>
+                     <%= link_to "Delete", event_path(event), method: :delete %>
+                    <br>
+                    <% end %>
+                    <%= link_to "Create the News", new_news_path %>
+                    <br>
+                    <% @news.each do |news| %>
+                      <%= link_to news.headline, news_path(news) %>
+                      <%= link_to "Edit", edit_news_path(news) %>
+                      <%= link_to "Delete", news_path(news), method: :delete %>
+                    <br>
+                    <% end %>
+
+                <li>
+                    <a href= "#" class="btn btn-danger"%>Sign Out</a>
                 </li>
             </ul>
         </div>

@@ -14,5 +14,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap.min
-//= require turbolinks
+//= require instafeed.min
 //= require_tree .

@@ -31,8 +31,19 @@ body {
 
 .modal-body {
   color: #A80000;
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
 }
 
+.modal-content{
+  background-color: #C41227
+}
+
+.modal-header{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 50px;
+  text-align: center;
+}
 .h1 {
   font-color:red;
 }

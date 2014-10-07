@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141001192855) do
+ActiveRecord::Schema.define(version: 20141006155223) do
 
   create_table "events", force: true do |t|
     t.string   "name"
@@ -46,5 +46,14 @@ ActiveRecord::Schema.define(version: 20141001192855) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+
+  create_table "vendors", force: true do |t|
+    t.string   "name"
+    t.string   "booth"
+    t.string   "category"
+    t.string   "bio"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

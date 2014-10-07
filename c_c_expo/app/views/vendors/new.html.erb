@@ -1,0 +1,31 @@
+<h1>New Vendor</h1>
+
+<%= form_for @vendor do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br>
+  <%= f.label :booth %>
+  <%= f.text_field :booth %>
+  <br>
+  <%= f.label "artist" %>
+  <%= f.radio_button :category, "artist" %>
+  <%= f.label "comics" %>
+  <%= f.radio_button :category, "comics" %>
+  <%= f.label "clothing" %>
+  <%= f.radio_button :category, "clothing" %>
+  <%= f.label "toys" %>
+  <%= f.radio_button :category, "toys" %>
+  <%= f.label "gaming" %>
+  <%= f.radio_button :category, "gaming" %>
+  <%= f.label "accessories" %>
+  <%= f.radio_button :category, "accessories" %>
+  <br>
+  <%= f.label :bio %>
+  <%= f.text_area :bio %>
+  <br>
+  <%= f.submit %>
+  <br>
+  <br>
+  <%= link_to root_path %>
+  <% end %>
+

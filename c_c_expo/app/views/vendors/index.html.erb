@@ -67,3 +67,18 @@
       <img src="assets/floor.png" height="350" width="1000"alt="where the action is...." />
       </div> 
      </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h1>VENDORS</h1>
+     <% @vendors.each do |vendor| %>
+                     <%= link_to vendor.name, vendor_path(vendor) %>
+                     <br>
+                 <% end %>

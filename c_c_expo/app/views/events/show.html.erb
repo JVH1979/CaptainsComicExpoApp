@@ -1,12 +1,9 @@
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
 <div class="jumbotron">
   
-  <%= @event.name %>
+  <h1><%= @event.name %></h1>
   <br/>
   <%= @event.time %>
   <br/>
@@ -15,5 +12,6 @@
   <%= @event.description %>
 
               <p><a class="btn btn-danger btn-lg" href="/events" role="Event Directory">EVENTS</a></p>
+     <%= image_tag "http://maps.google.com/maps/api/staticmap?size=300x400&sensor=false&markers=#{@event.latitude}%2C#{@event.longitude}" %>
 </div>
         

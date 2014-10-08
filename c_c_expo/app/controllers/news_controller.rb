@@ -3,6 +3,10 @@ class NewsController < ApplicationController
     @news = News.new
   end
 
+  def index
+    @news = News.all
+  end
+
   def create
     @news = News.create news_params
     redirect_to root_path

@@ -1,5 +1,19 @@
-<h1>Show data</h1>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="jumbotron">
+  
+  <%= @event.name %>
+  <br/>
+  <%= @event.time %>
+  <br/>
+  <%= @event.address %>
+  <br/>
+  <%= @event.description %>
 
-<%= @event.name %>
-
-<%= link_to "Home", root_path %>
+              <p><a class="btn btn-danger btn-lg" href="/events" role="Event Directory">EVENTS</a></p>
+</div>
+        

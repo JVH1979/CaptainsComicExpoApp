@@ -9,6 +9,7 @@ Rails.application.routes.draw do
    resources :events
    resources :news
    resources :vendors
+   resources :comingsoon
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

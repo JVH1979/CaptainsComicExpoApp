@@ -5,7 +5,7 @@
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="/"><img src="http://www.captainscomicexpo.com/images/expo_logo.png" border="2" style="border:2px solid black;max-width:100%;" alt="CCEXPO2015" />
-</a>
+                    </a>
                          
                     
                 </li>
@@ -66,4 +66,33 @@
       <div id="header">
       <img src="assets/news.png" alt="meanwhile..." />
       </div> 
-     </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+     <% @news.each do |news| %>
+     <div class="nav-clear"></div>
+     <div class="panel panel-default">
+        <div class="panel-heading"><div class="news"><%= link_to( news_index_path(@news), :method => :get) do %>
+            <%= link_to news.headline, news_path(news) %>
+        </div>
+        </div>
+            <% end %>
+            <div class="panel-body">
+            <div class="news">
+                <%= news.story %>
+            </div> 
+            </div>
+        <% end %>
+        
+
+    
+
+
+
+    
+      

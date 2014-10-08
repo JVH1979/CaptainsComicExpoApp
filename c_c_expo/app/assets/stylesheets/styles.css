@@ -15,7 +15,6 @@ div#wrapperHeader div#header {
 }
 
 
-
 body { 
   background-image: url('cover.jpg');
   background-repeat: repeat;
@@ -24,8 +23,17 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
 }
+
+center{
+   font-weight:800;
+   font-size: 40px;
+   font-family:'Permanent Marker', cursive;
+   text-shadow: .25px .2px #A80000;
+   color: #EB072D;
+   padding-top: 25px;
+}
+
 
 .modal-footer {   border-top: 0px; }
 
@@ -41,6 +49,7 @@ body {
 
 .modal-header{
   font-family: 'Permanent Marker', cursive;
+  font-color: #ebebf2;
   font-size: 50px;
   text-align: center;
 }
@@ -58,11 +67,11 @@ body {
 /* custom template */
 html, body {
    height: 100%;
-   font-family:'Open Sans',arial,sans-serif;
+   font-family:'Permanent Marker', cursive;
 }
 
 a {
-  color:#222222;
+  color:#EB072D;
 }
 
 .wrapper, .row {
@@ -165,11 +174,18 @@ a {
 
 h1,h2,h3 {
    font-weight:800;
-   font-family:'Open Sans',arial,sans-serif;
+   font-family:'Permanent Marker', cursive;
+   text-shadow: 4px 2px #A80000;
+   color: #EB072D;
 }
 
 .jumbotron {
-  background-color:transparent;
+  background-color:#A80000;
+  text-align: left;
+  padding: 30px;
+  margin-bottom: 30px;
+  padding-left: 150px;
+  padding-right: 150px;
 }
 .label-default {
   background-color:#dddddd;
@@ -188,5 +204,10 @@ h1,h2,h3 {
 }
 
 small.text-muted {
-  font-family:courier,courier-new,monospace;
+  font-family:'Permanent Marker', cursive;
 }
+
+img.img-responsive { 
+  width: 40%; 
+  
+  text-align: right; }​

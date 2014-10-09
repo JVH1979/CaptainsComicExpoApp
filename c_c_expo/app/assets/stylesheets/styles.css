@@ -30,7 +30,7 @@ center{
    font-size: 40px;
    font-family:'Permanent Marker', cursive;
    text-shadow: .25px .2px #A80000;
-   color: #EB072D;
+   color: #C8C8CC;
    padding-top: 25px;
 }
 
@@ -49,7 +49,7 @@ center{
 
 .modal-header{
   font-family: 'Permanent Marker', cursive;
-  font-color: #ebebf2;
+  font-color: #fff;
   font-size: 50px;
   text-align: center;
 }

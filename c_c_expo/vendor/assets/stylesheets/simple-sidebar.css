@@ -26,7 +26,7 @@
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #000;
+    background: #2A2B2E;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -57,6 +57,8 @@
     padding: 0;
     list-style: none;
     font-family: 'Permanent Marker', cursive;
+    font-size: 24px;
+    text-shadow: .25px .25px 3px #9E9898;
 }
 
 .sidebar-nav li {

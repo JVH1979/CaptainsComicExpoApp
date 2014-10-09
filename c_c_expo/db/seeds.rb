@@ -48,3 +48,7 @@ Vendor.create(name: "comix rox", booth: "616", category: "comics", bio: "bio")
 Vendor.create(name: "silly shirts", booth: "366", category: "clothing", bio: "bio")
 Vendor.create(name: "wicked games", booth: "212", category: "gaming", bio: "bio")
 Vendor.create(name: "artiste", booth: "366", category: "clothing", bio: "bio")
+
+['registered', 'banned', 'vendor', 'admin'].each do |role|
+  Role.find_or_create_by({name: role})
+end

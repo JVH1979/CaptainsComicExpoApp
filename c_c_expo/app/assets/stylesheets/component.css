@@ -33,7 +33,7 @@
   top: 20px;
   right: 20px;
   bottom: 20px;
-  background: rgba(71,163,218,0.2);
+  background: #434D5C;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -52,7 +52,7 @@
 
 .cbp-rfgrid li a div h3 {
   width: 100%;
-  color: #D8D7FC;
+  color: #D6D5DB;
   text-transform: uppercase;
   font-family: 'Anton', sans-serif;
   font-size: 50px;

@@ -93,36 +93,7 @@
                 <li>
                     <a href="/comingsoon">Services</a>
                 </li>
-                <li>
-                    <a href="#">Contact</a>
-                <li>
-                    <%= link_to "Create an Event", new_event_path %>
-                    <br>
-                    <% @events.each do |event| %>
-                     <%= link_to event.name, event_path(event) %>
-                     <%= link_to "Edit", edit_event_path(event) %>
-                     <%= link_to "Delete", event_path(event), method: :delete %>
-                    <br>
-                    <% end %>
-                    <%= link_to "Add a Vendor", new_vendor_path %>
-                    <br>
-                    <% @vendors.each do |vendor| %>
-                      <%= link_to vendor.name, vendor_path(vendor) %>
-                      <%= link_to "Edit", edit_vendor_path(vendor) %>
-                      <%= link_to "Delete", vendor_path(vendor), method: :delete %>
-                    <% end %>
-                    <br>
-                    <%= link_to "Create the News", new_news_path %>
-                    <br>
-                    <% @news.each do |news| %>
-                      <%= link_to news.headline, news_path(news) %>
-                      <%= link_to "Edit", edit_news_path(news) %>
-                      <%= link_to "Delete", news_path(news), method: :delete %>
-                    <br>
-                    <% end %>
-
-                <li>
-                    <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn btn-danger" %>
+              
                 </li>
             </ul>
         </div>
@@ -153,84 +124,18 @@
   <body>
 <div id="wrapperHeader" >
       <div id="header">
-      <center><img class="img-responsive" src="assets/land1.png"  position="float" alt="meanwhile..." /></center>
+      <center><img class="img-responsive" src="assets/land1.png"  width= "55%" position="float" alt="meanwhile..." /></center>
       </div> 
      </div>
 
 
-<div id="instafeed"></div>
+<div id="instafeed" class="container dynamic"></div>
 
 
 
 
 
-    <!--<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <h1><strong>THIS IS WHERE EVENTS WILL BE GOING</strong></h1>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="tile red">
-        <h3 class="title">Importance of Comics</h3>
-        <p>The panel to end all panels.</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="tile red">
-        <h3 class="title">Why Spiderman is better than the Batman.</h3>
-        <p>Just Cuz.</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="tile red">
-        <h3 class="title">Costume Party</h3>
-        <p>AWWWW YEAAAAH</p>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="tile red">
-        <h3 class="title">Magic</h3>
-        <p>It's a game.</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="tile red">
-        <h3 class="title">DC COMICS SUCK</h3>
-        <p>yep.</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="tile red">
-        <h3 class="title">Night Session</h3>
-        <p>"I wear my sunglasses at night."</p>
-      </div>
-    </div>     
-  </div>
-    <div class="row">
-    <div class="col-sm-4">
-      <div class="tile red">
-        <h3 class="title">Marvel</h3>
-        <p>is the best.</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="tile red">
-        <h3 class="title">Spend your money</h3>
-        <p>we're in a recession, y'know.</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="tile red">
-        <h3 class="title">High Fives</h3>
-        <p>for days.</p>
-      </div>
-    </div>
-  </div>
-</div>
+    <
 
 
 

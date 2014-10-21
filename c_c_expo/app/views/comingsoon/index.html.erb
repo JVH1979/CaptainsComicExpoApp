@@ -2,4 +2,35 @@
      <body style="background-image:url(assets/captain-america-throwing-his-shield.png)">
      <center>COMING SOON TRUE BELIEVERS!!!!!!!!!!!!</center>
      <p><a class="btn btn-danger btn-lg" href="/"role="button">HOME</a></p>
+
+       <li>
+                    <a href="#">Contact</a>
+                <li>
+                    <%= link_to "Create an Event", new_event_path %>
+                    <br>
+                    <% @events.each do |event| %>
+                     <%= link_to event.name, event_path(event) %>
+                     <%= link_to "Edit", edit_event_path(event) %>
+                     <%= link_to "Delete", event_path(event), method: :delete %>
+                    <br>
+                    <% end %>
+                    <%= link_to "Add a Vendor", new_vendor_path %>
+                    <br>
+                    <% @vendors.each do |vendor| %>
+                      <%= link_to vendor.name, vendor_path(vendor) %>
+                      <%= link_to "Edit", edit_vendor_path(vendor) %>
+                      <%= link_to "Delete", vendor_path(vendor), method: :delete %>
+                    <% end %>
+                    <br>
+                    <%= link_to "Create the News", new_news_path %>
+                    <br>
+                    <% @news.each do |news| %>
+                      <%= link_to news.headline, news_path(news) %>
+                      <%= link_to "Edit", edit_news_path(news) %>
+                      <%= link_to "Delete", news_path(news), method: :delete %>
+                    <br>
+                    <% end %>
+
+                <li>
+                    <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn btn-danger" %>
    </body>

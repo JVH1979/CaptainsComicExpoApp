@@ -1,0 +1,257 @@
+div#wrapperHeader {
+ width:100%;
+ height: 200px; /* height of the background image? */
+ background:url(assets/land1.jpg) repeat-x 0 0;
+ text-align:center;
+}
+
+div#wrapperHeader div#header {
+ width:1000px;
+ height:200px;
+ margin:0 auto;
+}
+
+
+body { 
+  background-image: url('cover.jpg');
+  background-repeat: repeat;
+  background-position: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+center{
+   font-weight:800;
+   font-size: 40px;
+   font-family:'Permanent Marker', cursive;
+   text-shadow: .25px .2px #A80000;
+   color: #C8C8CC;
+   padding-top: 25px;
+}
+
+
+.modal-footer {   border-top: 0px; }
+
+.modal-body {
+  color: #A80000;
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.modal-content{
+  background-color: #C41227;
+}
+
+.modal-header{
+  font-family: 'Permanent Marker', cursive;
+  font-color: #fff;
+  font-size: 50px;
+  text-align: center;
+}
+.h1 {
+  font-color:red;
+}
+
+
+
+
+/* move special fonts to HTML head for better performance */
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700');
+
+
+/* custom template */
+html, body {
+   height: 100%;
+   font-family:'Permanent Marker', cursive;
+}
+
+a {
+  color:#050505;
+}
+
+.wrapper, .row {
+   height: 100%;
+   margin-left:0;
+   margin-right:0;
+}
+
+.wrapper:before, .wrapper:after,
+.column:before, .column:after {
+    content: "";
+    display: table;
+}
+
+.wrapper:after,
+.column:after {
+    clear: both;
+}
+
+.column {
+    height: 100%;
+    overflow: auto;
+    *zoom:1;
+}
+
+.column .padding {
+    padding: 20px;
+}
+
+.box {
+    bottom: 0; /* increase for footer use */
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image:url('cover.jpg');
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+.divider {
+  margin-top:32px;
+}
+
+#main {
+    background-color:#fefefe;
+}
+#main .img-circle {
+  margin-top:18px;
+  height:70px;
+  width:70px;
+}
+
+#sidebar, #sidebar a {
+    color:#ffffff;
+    background-color:transparent;
+  text-shadow:1px 0 1px #888888;
+}
+#sidebar a.logo {
+  display:block;
+  padding:3px;
+  background-color:#fff;
+  color:#777777;
+  height:40px;
+  width:40px;
+  margin:15px;
+  font-size:26px;
+  font-weight:700;
+  text-align:center;
+  text-decoration:none;
+  text-shadow:0 0 0;
+}
+#sidebar-footer {
+  position:absolute;bottom:5px;
+}
+#footer {
+  margin-bottom:20px;
+}
+
+/* center and adjust the sidebar contents on smaller devices */
+@media (max-width: 768px) {
+  #sidebar,#sidebar a.logo {
+    text-align:center;
+    margin:0 auto;
+    margin-top:30px;
+    font-size:26px;
+  }
+  #sidebar a.logo {
+    font-size:50px;
+    height:75px;
+    width:75px;
+    margin-bottom:30px;
+  }
+}
+
+
+
+
+/* bootstrap overrides */
+
+h1,h2,h3 {
+   font-weight:500;
+   font-family:'Permanent Marker', cursive;
+   text-shadow: 4px 2px #A80000;
+   color: #EB072D;
+}
+
+.jumbotron {
+  background-color:#8B8D8F;
+  text-align: left;
+  padding: 30px;
+  margin-bottom: 30px;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+.label-default {
+  background-color:#dddddd;
+}
+
+.page-header {
+  margin-top: 55px;
+  padding-top: 9px;
+  border-top:1px solid #eeeeee;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:2px;
+}
+
+.col-sm-9.full {
+    width: 100%;
+}
+
+small.text-muted {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.multicol-helper {
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+    right: 3rem;
+    bottom: 3rem;
+    -webkit-column-width: 20rem;
+    -webkit-column-gap: 5rem;
+    -webkit-column-rule: 1px dotted rgba(0,0,0,0.05);
+}
+
+.news{
+  font-family: 'Cabin', sans-serif;
+   font-size: 30px;
+   font-color: #3A3A3D;
+}
+
+.panel{
+  font-size: 72px;
+
+}
+
+
+.header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+.nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:100px;
+    float:left;
+    padding:5px; 
+}
+.section {
+    width:350px;
+    float:left;
+    padding:10px; 
+}
+.footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+}
